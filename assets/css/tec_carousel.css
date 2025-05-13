@@ -42,7 +42,7 @@
         min-width: 100px;
         margin: 0 1.5rem;
         opacity: 0.5;
-        transition: transform 0.3s;
+        transition: transform 0.2s;
         font-size: 2rem;
     }
 }

@@ -2,7 +2,7 @@ const terminal = document.getElementById('terminal-text');
 
 const commands = [
     'echo "Bem-vindo ao meu portfólio!"',
-    'echo "Estudante, estágiario, atleta... e ainda durmo às vezes."',
+    'echo "Estudante, aprendiz, atleta... e ainda durmo às vezes."',
     'echo "Scroll down e me conheça melhor."',
     'clear'
 ];

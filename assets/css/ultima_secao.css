@@ -68,7 +68,8 @@ section#ultima-secao {
         }
     }
 
-    & div#cards {
+    & div#cards,
+    & div#cards2 {
         margin: -80px auto auto auto;
         height: 600px;
         width: 90%;
@@ -108,14 +109,14 @@ section#ultima-secao {
                 overflow: hidden;
                 transition: transform 0.4s ease;
 
-                &#metabee {
-                    background: url(../img/Metabee.png);
+                &#game {
+                    background: url(../img/game.png);
                     background-position: center;
                     background-size: cover;
                 }
 
-                &#spotify {
-                    background: url(../img/spotify.webp);
+                &#instasany {
+                    background: url(../img/instasany.png);
                     background-position: center;
                     background-size: cover;
                 }
@@ -126,8 +127,26 @@ section#ultima-secao {
                     background-size: cover;
                 }
 
-                &#exactTime {
-                    background: url(../img/ExactTime.png) no-repeat;
+                &#clima {
+                    background: url(../img/clima.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#lista {
+                    background: url(../img/lista.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#calculadora {
+                    background: url(../img/calculadora.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#imovi {
+                    background: url(../img/imovi.png) no-repeat;
                     background-position: center;
                     background-size: cover;
                 }
@@ -180,7 +199,17 @@ section#ultima-secao {
             }
         }
     }
+
+    & div#cards {
+        border-bottom: none;
+    }
+
+    & div#cards2 {
+        margin-top: -15px;
+        border-top: none;
+    }
 }
+
 
 @media (min-width: 320px) and (max-width: 450.99px) {
     section#ultima-secao {
@@ -190,7 +219,8 @@ section#ultima-secao {
             font-size: 4rem;
         }
 
-        div#cards {
+        div#cards,
+        & div#cards2 {
             flex-wrap: wrap;
             justify-content: center;
             height: auto;
@@ -213,6 +243,15 @@ section#ultima-secao {
             filter: blur(60px);
             /* reduz impacto visual */
             transform: scale(0.8);
+        }
+
+        & div#cards {
+            border-bottom: none;
+        }
+
+        & div#cards2 {
+            margin-top: -15px;
+            border-top: none;
         }
     }
 }
@@ -225,7 +264,8 @@ section#ultima-secao {
             font-size: 4rem;
         }
 
-        div#cards {
+        div#cards,
+        & div#cards2 {
             flex-wrap: wrap;
             justify-content: center;
             height: auto;
@@ -248,6 +288,15 @@ section#ultima-secao {
             filter: blur(60px);
             /* reduz impacto visual */
             transform: scale(0.8);
+        }
+
+        & div#cards {
+            border-bottom: none;
+        }
+
+        & div#cards2 {
+            margin-top: -15px;
+            border-top: none;
         }
     }
 }

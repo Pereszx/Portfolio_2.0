@@ -171,177 +171,30 @@
     }
 }
 
-@media (350px < width < 450px) {
-    #stack {
-        position: relative;
-        overflow: hidden;
-
-        & #stack-title {
-            z-index: 1;
-            text-align: center;
-            margin: 30px auto;
-            opacity: 100%;
-            position: relative;
-            width: 80%;
-
-            & h1 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-                color: var(--white);
-            }
-
-            & p {
-                max-width: 700px;
-                margin: 0 auto;
-                font-size: 1rem;
-                color: var(--gray-250);
-            }
+@media (max-width: 768px) {
+    #stack div#stats {
+        & div#stats-content {
+            width: 95%;
+            /* melhora a largura em telas menores */
         }
 
-        .glow-bg {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            width: 1000px;
-            height: 900px;
-            transform: translate(-50%, -50%);
-            background: radial-gradient(circle, var(--blue-200) 0%, rgba(10, 94, 221, 0.425) 80%);
-            filter: blur(100px);
-            z-index: 0;
-        }
+        & .stats-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem;
 
-        & #stack-lists-bg {
-            position: relative;
-            z-index: 1;
-            padding: 30px 20px 0px 20px;
-            text-align: center;
-            width: 80%;
-            margin: auto;
-            width: 90%;
-            border: none;
+            & .stats-col {
+                border: none;
+                width: 100%;
 
-            & h3 {
-                font-size: 3rem;
-                margin: 30px;
-                margin-top: 0;
-                color: var(--white);
-            }
-
-            & #stack-lists {
-                border-top-right-radius: 1rem;
-                border-top-left-radius: 1rem;
-                background-color: #212121;
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 2rem;
-                padding: 40px;
-
-                & .stack-list {
-                    list-style: none;
-                    padding: 0;
-
-                    & h4 {
-                        font-size: 1.2rem;
-                        margin-bottom: 0.5rem;
-                        color: #ffffff;
-                        border-bottom: 2px solid #313131;
-                        padding-bottom: 0.3rem;
-                    }
-
-                    & li {
-                        display: flex;
-                        align-items: center;
-                        margin: 0.6rem 0;
-                        font-size: 1.1rem;
-                        color: #fff;
-
-                        & i {
-                            margin-right: 0.5rem;
-                            font-size: 1.2rem;
-                            color: var(--blue-600);
-                        }
-                    }
-                }
-            }
-        }
-
-        & div#stats {
-            z-index: 2;
-            width: 100%;
-            position: relative;
-            background: var(--main-bg);
-            border-top: 1px solid #66666666;
-            border-bottom: 1px solid #66666666;
-            text-align: center;
-
-            & div#stats-content {
-                border-right: 1px solid #66666666;
-                border-left: 1px solid #66666666;
-                width: 80%;
-                margin: auto;
-
-                & h3 {
-                    font-size: 2rem;
-                    margin: 30px;
+                &#stats-2 {
+                    border-top: 1px solid rgba(128, 128, 128, 0.185);
+                    border-left: none;
                 }
 
-                & .stats-grid {
-                    display: grid;
-                    grid-template-columns: 100%;
-                    margin-top: 2rem;
-                    width: 100%;
-
-                    & .stats-col {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        border-top: 1px solid rgba(128, 128, 128, 0.185);
-                        width: 100%;
-
-                        &#stats-1 {
-                            grid-column: 1;
-                            order: 1;
-                            width: 100%;
-                        }
-                        
-                        &#stats-2 {
-                            border-left: 1px solid rgba(128, 128, 128, 0.185);
-                            grid-column: 1;
-                            width: 100%;
-                        }
-
-
-                        & #piechart,
-                        & #barchart {
-                            width: 100%;
-                            height: auto;
-                            border: none;
-                            background: transparent;
-                        }
-
-                        & div#coding-time {
-                            margin-top: 2rem;
-                            padding: 1rem 2rem;
-                            color: var(--gray-250);
-                            text-align: center;
-                            border-top: 1px solid #66666666;
-                            width: 100%;
-                            order: 3;
-
-                            & h4 {
-                                font-size: 1.2rem;
-                                margin-bottom: 0.5rem;
-                                color: var(--white);
-                            }
-
-                            & p {
-                                font-size: 0.95rem;
-                            }
-                        }
-                    }
+                & #piechart,
+                & #barchart {
+                    height: 250px;
                 }
-
             }
         }
     }

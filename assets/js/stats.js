@@ -7,19 +7,19 @@ google.charts.setOnLoadCallback(drawPieChart);
 function drawPieChart() {
     var data = google.visualization.arrayToDataTable([
         ['Linguagem', 'Uso'],
-        ['Golang', 31.72],
-        ['JavaScript', 7.48],
-        ['HTML', 28.83],
-        ['CSS', 20.41],
-        ['Java', 11.56]
+        ['HTML', 31.72],
+        ['C#', 7.48],
+        ['CSS', 28.83],
+        ['JavaScript', 20.41],
+        ['Next.js', 11.56]
     ]);
 
     var options = {
         title: 'Linguagens mais usadas',
         titleTextStyle: {
-            color: '#fff', // Cor do título
-            fontSize: 15,  // Tamanho da fonte do título
-            bold: true     // Título em negrito
+            color: '#fff',
+            fontSize: 15,
+            bold: true
         },
         slices: {
             0: { offset: 0 },
@@ -34,7 +34,7 @@ function drawPieChart() {
         is3D: false,
         backgroundColor: '#0D1117',
         legendTextStyle: {
-            color: '#fff', // Cor das legendas
+            color: '#fff',
             fontSize: 10
         },
         chartArea: {
@@ -45,11 +45,11 @@ function drawPieChart() {
         },
         backgroundColor: 'transparent',
         colors: [
-            '#0c2d72',  // azul profundo quase marinho
-            '#49a5f5', // azul claro médio (mais escuro que o anterior)
-            '#1275c9', // azul padrão
-            '#7cc6ff', // azul mais saturado
-            '#0077b6' // azul escuro vibrante
+            '#0c2d72',
+            '#49a5f5',
+            '#1275c9',
+            '#7cc6ff',
+            '#0077b6'
         ]
     };
 
@@ -63,40 +63,40 @@ google.charts.setOnLoadCallback(drawBarChart);
 function drawBarChart() {
     var data = google.visualization.arrayToDataTable([
         ['Ferramenta', 'Nível de Conhecimento', { role: 'style' }],
-        ['Golang', 90, 'color: #7cc6ff'],
-        ['HTML', 85, 'color: #49a5f5'],
-        ['CSS', 75, 'color: #1275c9'],
-        ['Banco de dados', 80, 'color:rgb(1, 85, 131)'],
-        ['JavaScript', 40, 'color: #0c2d72']
+        ['HTML', 90, 'color: #7cc6ff'],
+        ['CSS', 85, 'color: #49a5f5'],
+        ['JavaScript', 65, 'color: #1275c9'],
+        ['C#', 50, 'color:rgb(1, 85, 131)'],
+        ['Next.js', 40, 'color: #0c2d72']
     ]);
 
     var options = {
         title: 'Nível de Conhecimento das Ferramentas',
         titleTextStyle: {
-            color: '#fff', // Cor do título
-            fontSize: 18,  // Tamanho da fonte do título
-            bold: true     // Título em negrito
+            color: '#fff',
+            fontSize: 18,
+            bold: true
         },
         hAxis: {
             title: 'Nível de conhecimento (%)',
             minValue: 0,
             textStyle: {
-                color: '#fff', // Cor da fonte no eixo X
+                color: '#fff',
                 fontSize: 14
             },
             titleTextStyle: {
-                color: '#fff', // Cor do título do eixo X
+                color: '#fff',
                 fontSize: 16
             }
         },
         vAxis: {
             title: 'Ferramentas',
             textStyle: {
-                color: '#fff', // Cor da fonte no eixo Y
+                color: '#fff',
                 fontSize: 14
             },
             titleTextStyle: {
-                color: '#fff', // Cor do título do eixo Y
+                color: '#fff',
                 fontSize: 16
             }
         },
@@ -106,7 +106,7 @@ function drawBarChart() {
         },
         backgroundColor: '#0D1117',
         legendTextStyle: {
-            color: '#fff' // Cor das legendas
+            color: '#fff'
         }
     };
 

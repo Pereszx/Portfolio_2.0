@@ -1,7 +1,7 @@
 section#banner {
     width: 100%;
     background: linear-gradient(to top, var(--blue-400) 2%, var(--blue-600) 10%, var(--blue-night) 60%);
-    min-height: 850px;
+    min-height: 950px;
     display: flex;
     justify-content: space-between;
     border-bottom: 0.1px solid rgba(255, 255, 255, .2);
@@ -22,7 +22,8 @@ section#banner {
             border-radius: 15px 15px 0px 0px;
 
             & img {
-                height: 650px;
+                width: 500px;
+                height: 800px;
                 margin: 30px 30px 0px 30px;
                 border-radius: 15px 15px 0px 0px;
             }
@@ -68,74 +69,41 @@ section#banner {
     }
 }
 
-@media (319px < width < 450.99px) {
+@media (max-width: 1024px) {
     section#banner {
         flex-direction: column;
+        align-items: center;
         padding-top: 80px;
+    }
 
-        & div#profile-img {
-            width: 100%;
-            order: 2;
+    section#banner div#profile-text {
+        width: 100%;
+        order: 1;
+    }
 
-            & #img-bg img {
-                height: 550px;
-                margin: 30px 30px 0px 30px;
-                border-radius: 15px 15px 0px 0px;
-            }
+    section#banner div#profile-text #profile-title {
+        width: 90%;
+        margin: 0 auto;
+
+        & h1 {
+            font-size: 2rem;
         }
 
-        & div#profile-text {
-            width: 100vw;
-            order: 1;
-
-            & #profile-title {
-                width: 100%;
-
-                & h1 {
-                    font-size: 2rem;
-                }
-
-                & p {
-                    font-size: 1rem;
-                }
-            }
+        & p {
+            font-size: 1rem;
         }
     }
 
-}
+    section#banner div#profile-img {
+        width: 100%;
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
 
-@media (451px < width < 1024px) {
-    section#banner {
-        flex-direction: column;
-        padding-top: 80px;
-
-        & div#profile-img {
-            width: 100%;
-            order: 2;
-
-            & #img-bg img {
-                height: 550px;
-                margin: 30px 30px 0px 30px;
-                border-radius: 15px 15px 0px 0px;
-            }
-        }
-
-        & div#profile-text {
-            width: 100vw;
-            order: 1;
-
-            & #profile-title {
-                width: 80%;
-                margin: auto;
-
-                & h1 {
-                    font-size: 2rem;
-                }
-
-                & p {
-                    font-size: 1rem;
-                }
-            }
-        }
+    section#banner div#profile-img #img-bg img {
+        width: 70%;
+        height: auto;
+        max-width: 400px;
     }
 }
