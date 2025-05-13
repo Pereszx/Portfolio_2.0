@@ -150,6 +150,12 @@ section#ultima-secao {
                     background-position: center;
                     background-size: cover;
                 }
+
+                &#metabee {
+                    background: url(../img/metabee.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
             }
 
             & div.description {
