@@ -1,0 +1,98 @@
+#terminal {
+    color: white;
+    width: 60%;
+    margin: 100px auto;
+    min-height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(49, 49, 49);
+    overflow: hidden;
+    box-sizing: border-box;
+
+    & div#terminal-header {
+        background: #2F2F2F;
+        padding: 5px 0px 5px 10px;
+    }
+
+    & div#terminal-text {
+        padding: 5px 0px 5px 10px;
+        overflow: hidden;
+        height: 40%;
+        background: #171717;
+        font-family: "Fira Code", monospace;
+        color: #cfcfcf;
+
+        font-size: 16px;
+        line-height: 1.5rem;
+        overflow-y: auto;
+        white-space: pre;
+
+        & span.cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            background-color: white;
+            margin-left: 2px;
+            animation: blink 1s steps(1) infinite;
+        }
+
+    }
+
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (319px < width < 450.99px) {
+    #terminal {
+        margin: 60px auto;
+        width: 90%;
+        min-height: 100px;
+
+        & div#terminal-header {
+            background: #2F2F2F;
+            padding: 5px 0px 5px 10px;
+        }
+
+        & div#terminal-text {
+            padding: 12px;
+            height: 25%;
+            font-size: 13px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #cfcfcf;
+        }
+    }
+}
+
+@media (451px < width < 1440px) {
+    #terminal {
+        margin: 60px auto;
+        width: 90%;
+        min-height: 100px;
+
+        & div#terminal-header {
+            background: #2F2F2F;
+            padding: 5px 0px 5px 10px;
+        }
+
+        & div#terminal-text {
+            padding: 12px;
+            height: 25%;
+            font-size: 13px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #cfcfcf;
+        }
+    }
+}

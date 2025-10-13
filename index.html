@@ -1,0 +1,384 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script type="text/javascript" src="assets/js/stats.js" defer></script>
+
+  <!-- Links -->
+  <link rel="shortcut icon" type="imagex/ico" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/banner.css" />
+  <link rel="stylesheet" href="assets/css/terminal.css" />
+  <link rel="stylesheet" href="assets/css/sobre-mim.css" />
+  <link rel="stylesheet" href="assets/css/stack.css" />
+  <link rel="stylesheet" href="assets/css/tec_carousel.css" />
+  <link rel="stylesheet" href="assets/css/ultima_secao.css" />
+  <link rel="stylesheet" href="assets/css/project_carousel.css" />
+  <link rel="stylesheet" href="assets/css/contatos.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
+  <title>Portfólio</title>
+</head>
+
+<body>
+
+  <!-- Navegação -->
+  <header>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <a href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" id="logo"><img
+            src="assets/img/logo.png" alt="logo"></a>
+        <div id="links">
+          <li><a href="#1" onclick="window.scrollTo({ top: 1300, behavior: 'smooth' })">Sobre</a></li>
+          <li><a href="#2" onclick="window.scrollTo({ top: 2000, behavior: 'smooth' })">Skills</a></li>
+          <li><a href="#3" onclick="window.scrollTo({ top: 3400, behavior: 'smooth' })">Projetos</a></li>
+          <li><a href="#4" onclick="window.scrollTo({ top: 9000, behavior: 'smooth' })">Contatos</a></li>
+        </div>
+      </ul>
+
+      <div id="nav-buttons">
+        <a href="https://github.com/Pereszx">
+          <button id="github">
+              <p>GitHub</p>
+          </button>
+        </a>
+        <a href="assets/pdf/Currículo.pdf" download>
+          <button>
+            <p>Currículo</p>
+          </button>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Scroll up button -->
+  <button id="to-top">
+    <a href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </button>
+
+  <!-- Banner/hero section -->
+  <section id="banner">
+    <div id="profile-img">
+      <div id="img-bg">
+        <img src="assets/img/perfil.jpg" alt="foto minha">
+      </div>
+    </div>
+    <div id="profile-text">
+      <div id="profile-title">
+        <h1>Desenvolvedor Front-End focado em soluções eficientes e criativas</h1>
+        <p>Atualmente, sou Desenvolvedor Front-End com experiência em criar interfaces
+          intuitivas e responsivas que proporcionam experiências de usuário excepcionais.
+        </p>
+        <a href="#1" onclick="window.scrollTo({ top: 1300, behavior: 'smooth' })"><button>Explorar</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terminal -->
+  <section id="terminal">
+    <div id="terminal-header">Terminal</div>
+    <div id="terminal-text">
+      <span class="cursor"></span>
+    </div>
+  </section>
+
+  <!-- Sobre mim -->
+  <section id="sobre-mim">
+    <div id="sobre-mim-content">
+
+      <div id="sobre-mim-header">
+        <div id="sobre-mim-title">
+          <h2>Sobre mim</h2>
+        </div>
+        <div id="badges">
+          <div class="badge"><i class="bi bi-wrench"></i> Resolução de problemas</div>
+          <div class="badge"><i class="bi bi-lightning-fill"></i> Aprendizado rápido</div>
+          <div class="badge"><i class="bi bi-people-fill"></i> Trabalho em equipe</div>
+        </div>
+      </div>
+
+      <div id="sobre-mim-info">
+        <ul>
+          <h3> Dados rápidos</h3>
+          <li>Nome: Kauã Peres Sudre</li>
+          <li>Formação: Engenharia de Software</li>
+          <li>Período atual: 4º período</li>
+          <li>Empresa atual: Electroclux</li>
+          <li>Cargo: aprendiz</li>
+          <li>Localização: São José dos Pinhais, PR</li>
+        </ul>
+
+        <div id="text">
+          <h3>O caminho até aqui</h3>
+          <p>
+            Apaixonado por tecnologia e pela resolução de problemas complexos, estou cursando o 4º período de Engenharia
+            de Software na Universidade SENAI PR. Tenho buscado evoluir constantemente por meio de eventos, treinamentos
+            práticos e
+            estudos complementares, fortalecendo minha base técnica em desenvolvimento de software. Valorizo a inovação,
+            o
+            trabalho em equipe e a entrega de soluções eficientes que gerem impacto real. Estou preparado para
+            contribuir em
+            projetos desafiadores, com foco em aprendizado contínuo e resultados de qualidade.
+          </p>
+        </div>
+
+        <div id="sobre-mim-tecs">
+          <h3>Tecnologias favoritas</h3>
+          <div id="tec-cards">
+
+            <div class="small-tec-card">
+              <i class="devicon-javascript-plain colored"></i></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="small-tec-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <p>MySQL</p>
+            </div>
+            <div class="small-tec-card">
+              <i class="devicon-python-plain colored"></i>
+              <p>Python</p>
+            </div>
+            <div class="small-tec-card">
+              <i class="devicon-git-plain colored"></i>
+              <p>Git</p>
+            </div>
+            <div class="small-tec-card">
+              <i class="devicon-vscode-plain colored"></i>
+              <p>VsCode</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estátisticas -->
+  <section id="stack">
+    <div id="stack-title">
+      <h1>Stack de conhecimentos</h1>
+      <p>Aqui estão as principais tecnologias que venho estudando e aplicando em projetos, tanto na faculdade quanto no
+        ambiente de trabalho. Elas refletem minha evolução como desenvolvedor e minha vontade constante de aprender.</p>
+    </div>
+
+    <div class="glow-bg"></div>
+
+    <div id="stack-lists-bg">
+      <h3>Tecnologias</h3>
+      <div id="stack-lists">
+        <ul class="stack-list">
+          <h4>Front-end</h4>
+          <li><i class="devicon-html5-plain"></i>HTML</li>
+          <li><i class="devicon-css3-plain"></i>CSS</li>
+          <li><i class="devicon-javascript-plain"></i>JavaScript</li>
+          <li><i class="devicon-bootstrap-plain"></i>Bootstrap</li>
+          <li><i class="devicon-react-plain"></i>React.js</li>
+        </ul>
+        <ul class="stack-list">
+          <h4>Back-end</h4>
+          <li><i class="devicon-python-plain"></i>Python</li>
+          <li><i class="devicon-csharp-plain"></i>C#</li>
+        </ul>
+        <ul class="stack-list">
+          <h4>Banco de dados</h4>
+          <li><i class="devicon-mysql-original"></i>MySQL</li>
+        </ul>
+        <ul class="stack-list">
+          <h4>Ferramentas</h4>
+          <li><i class="devicon-github-original"></i>Github</li>
+          <li><i class="devicon-git-plain"></i>Git</li>
+          <li><i class="devicon-vscode-plain"></i>VsCode</li>
+          <li><i class="devicon-bitbucket-original"></i>Bitbucket</li>
+          <li><i class="devicon-postman-plain"></i>Postman</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="stats">
+      <div id="stats-content">
+        <h3>Estatísticas</h3>
+        <div class="stats-grid">
+          <div class="stats-col" id="stats-1">
+            <!-- Gráfico de Pizza vai aqui -->
+            <div id="piechart"></div>
+            <div id="coding-time">
+              <h4>Tempo codando</h4>
+              <p>152 horas e 42 minutos digitando</p>
+            </div>
+          </div>
+          <div class="stats-col" id="stats-2">
+            <!-- Gráfico de Barras vai aqui -->
+            <div id="barchart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Ultima seção -->
+  <section id="ultima-secao">
+
+    <!-- Background light points -->
+    <div class="light-point-bg" id="bg-1"></div>
+    <div class="light-point-bg" id="bg-2"></div>
+    <div class="light-point-bg" id="bg-3"></div>
+    <div class="light-point-bg" id="bg-4"></div>
+    <div class="light-point-bg" id="bg-5"></div>
+
+    <!-- Projetos -->
+    <div id="projetos-title">
+      <h2 id="titulo">Projetos</h2>
+    </div>
+
+    <!-- Projetos destaque -->
+    <div id="cards">
+
+      <div class="card">
+        <div class="img" id="game"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Game Mata-Mosquito </div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Game-JS"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Game-JS/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="instasany"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto mentoria Next.js</div>
+          <div class="card-title">instasany </div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/instasany"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://instasany-j159.vercel.app/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="art"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">StreetArt </div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Artes-de-rua"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Artes-de-rua/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="clima"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Previsão do Tempo </div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Previsao-do-tempo"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Previsao-do-tempo/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="cards2">
+
+      <div class="card">
+        <div class="img" id="lista"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Lista de tarefas</i></div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/To-do-list/"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/To-do-list/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="calculadora"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Calculadora </div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Calculadora"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Calculadora-Web/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="imovi"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Imovi</i></div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Imovi"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Imovi/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="metabee"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto acadêmico</div>
+          <div class="card-title">Metabee</i></div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Metabee"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Metabee/"><button>Vizualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contatos -->
+    <section id="contatos">
+      <div class="cta-container">
+        <h2>Gostou do que viu?</h2>
+        <p>Vamos conversar? mande uma mensagem em minhas redes sociais</p>
+
+        <div class="cta-buttons">
+          <a href="https://www.linkedin.com/in/kauaperessudre/" target="_blank" class="cta-btn">LinkedIn</a>
+          <a href="https://github.com/Pereszx" target="_blank" class="cta-btn">GitHub</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kauaperessudre13@gmail.com" target="_blank" class="cta-btn">E-mail</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Kauã Peres Sudre. Todos os direitos reservados.</p>
+    </footer>
+
+  </section>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/projetos.js"></script>
+
+</body>
+
+</html>

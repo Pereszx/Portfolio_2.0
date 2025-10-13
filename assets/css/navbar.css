@@ -1,0 +1,232 @@
+nav {
+    height: 8vh;
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    font-size: 1.3em;
+    z-index: 10;
+    position: fixed;
+    transition: background-color .5s ease;
+
+    & a#logo {
+        margin-left: 15px;
+        opacity: 50%;
+
+        & img {
+            height: 30px;
+            width: 50px;
+        }
+
+        &:hover {
+            opacity: 1;
+            transition: .3s;
+        }
+    }
+
+    & a {
+        color: var(--gray-250);
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            opacity: 1;
+            transition: .3s;
+            color: var(--white);
+        }
+    }
+
+    & ul.nav-list {
+        font-weight: 400;
+        list-style: none;
+        display: flex;
+        transition: .3s ease-in-out;
+        font-size: 1rem;
+
+        & #links {
+            display: flex;
+            flex-direction: row;
+
+            & li {
+                margin-left: 32px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+
+    & div#nav-buttons {
+        margin-right: 15px;
+
+        & a button {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-color: rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.15);
+                transition: .3s;
+                cursor: pointer;
+            }
+
+            &#github {
+                background: none;
+                border: none;
+                color: #ffffff85;
+
+                &:hover {
+                    transition: .3s;
+                    color: var(--white);
+                }
+            }
+
+        }
+    }
+
+}
+
+nav.ativo {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+
+    & ul.nav-list a#logo {
+        opacity: 100%;
+    }
+
+    & ul.nav-list div#links li a {
+        color: var(--white);
+
+        &:hover {
+            transition: .3s;
+            color: var(--gray-250);
+        }
+    }
+
+
+    & div#nav-buttons a button {
+        border-color: var(--white);
+        padding: 3px 15px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+
+        &#github {
+            color: var(--white);
+            background: none;
+
+            &:hover {
+                transition: .3s;
+                color: var(--gray-250);
+            }
+        }
+
+        &:hover {
+            border-color: var(--gray-250);
+            transition: .3s;
+            color: var(--gray-250);
+        }
+    }
+}
+
+button#to-top {
+    position: fixed;
+    bottom: 50;
+    right: 50;
+    z-index: 10;
+
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 50px;
+
+    transform: rotate(-45deg);
+    transition: .3s ease-in-out;
+
+    & i {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.15);
+        cursor: pointer;
+        transform: rotate(0deg);
+    }
+}
+
+button#to-top.ativo {
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+
+@media (319px < width < 450.99px) {
+    nav {
+        padding: 10px 10px;
+        margin: 0;
+        height: auto;
+        justify-content: space-around;
+
+        & div#nav-buttons a button {
+            padding: 5px 10px;
+        }
+    }
+
+    nav ul.nav-list {
+        gap: 20px;
+        width: 100%;
+    }
+
+    nav ul.nav-list #links {
+        display: none;
+    }
+
+    nav div#nav-buttons {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: right;
+    }
+
+}
+
+@media (451px < width < 620px) {
+    nav {
+        padding: 10px 10px;
+        margin: 0;
+        height: auto;
+    }
+
+    nav ul.nav-list {
+        gap: 20px;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul.nav-list #links {
+        margin-left: 0;
+    }
+
+    nav a#logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav div#nav-buttons {
+        display: none;
+    }
+
+}

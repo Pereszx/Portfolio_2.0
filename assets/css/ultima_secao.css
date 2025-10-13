@@ -1,0 +1,308 @@
+section#ultima-secao {
+    min-height: 750px;
+    text-align: center;
+    padding-top: 60px;
+    background: none;
+    position: relative;
+    overflow: hidden;
+
+    & div.light-point-bg {
+        position: absolute;
+        height: 900px;
+        transform: translate(-50%, -50%);
+        filter: blur(100px);
+        z-index: 0;
+
+        &#bg-1 {
+            top: 0%;
+            left: 10%;
+            width: 1000px;
+            height: 400px;
+            background: radial-gradient(circle, var(--blue-200) 0%, rgba(4, 67, 119, 0.685) 80%);
+        }
+
+        &#bg-2 {
+            top: 15%;
+            left: 80%;
+            width: 1000px;
+            height: 900px;
+            background: radial-gradient(circle, var(--blue-600) 0%, rgba(7, 71, 167, 0.425) 80%, rgba(0, 255, 255, 0.2) 100%);
+        }
+
+        &#bg-3 {
+            top: 100%;
+            left: -5%;
+            width: 1500px;
+            height: 1500px;
+            background: radial-gradient(circle, #f5a623 0%, rgba(10, 94, 221, 0.678) 80%);
+        }
+
+        &#bg-4 {
+            top: 50%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(100, 148, 237, 0.774) 0%, rgba(124, 77, 255, 0.2) 50%, transparent 70%);
+        }
+
+        &#bg-5 {
+            top: 85%;
+            left: 85%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 229, 255, 0.1), transparent 70%);
+        }
+    }
+
+    & div#projetos-title {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+        & h2 {
+            font-weight: bold;
+            font-size: 15rem;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            letter-spacing: 8px;
+        }
+    }
+
+    & div#cards,
+    & div#cards2 {
+        margin: -80px auto auto auto;
+        height: 600px;
+        width: 90%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        position: relative;
+        z-index: 3;
+
+        border: 1px solid rgba(90, 90, 90, 0.568);
+        border-radius: 10px;
+        background-color: #21212128;
+        backdrop-filter: blur(15px);
+        padding: 40px;
+
+        & div.card {
+            width: 23%;
+            border: 1px solid rgba(255, 255, 255, 0.158);
+            border-radius: 8px;
+
+            &:hover {
+
+                & div.img {
+                    transform: scale(1.05);
+                }
+
+                & div.description {
+                    background-color: #1f1f1f;
+                }
+            }
+
+            & div.img {
+                background-color: white;
+                height: 70%;
+                overflow: hidden;
+                transition: transform 0.4s ease;
+
+                &#game {
+                    background: url(../img/game.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#instasany {
+                    background: url(../img/instasany.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#art {
+                    background: url(../img/Art.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#clima {
+                    background: url(../img/clima.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#lista {
+                    background: url(../img/lista.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#calculadora {
+                    background: url(../img/calculadora.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#imovi {
+                    background: url(../img/imovi.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &#metabee {
+                    background: url(../img/Metabee.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            & div.description {
+                background-color: #212121be;
+                backdrop-filter: blur(15px);
+                height: 30%;
+                text-align: left;
+                padding: 20px;
+                transition: 0.3s;
+
+                & div.card-mini-text {
+                    margin-bottom: 10px;
+                    color: #ffffff73;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: .8rem;
+                }
+
+                & div.card-title {
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                    color: #fff;
+                    font-size: 1.1rem;
+                }
+
+                & div.button-content {
+                    display: flex;
+                    margin-top: 6%;
+                    gap: 3.5%;
+                }
+
+                & div.card-button button {
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 12px 24px;
+                    border-radius: 50px;
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        border-color: rgba(255, 255, 255, 0.3);
+                        background: rgba(255, 255, 255, 0.15);
+                    }
+                }
+            }
+        }
+    }
+
+    & div#cards {
+        border-bottom: none;
+    }
+
+    & div#cards2 {
+        margin-top: -15px;
+        border-top: none;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 450.99px) {
+    section#ultima-secao {
+        padding-top: 50px;
+
+        div#projetos-title h2 {
+            font-size: 4rem;
+        }
+
+        div#cards,
+        & div#cards2 {
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+            padding: 30px;
+            row-gap: 20px;
+            column-gap: 20px;
+            margin-top: 10px;
+
+            & div.card {
+                width: 100%;
+                height: 500px;
+
+                & div.description {
+                    height: auto;
+                }
+            }
+        }
+
+        div.light-point-bg {
+            filter: blur(60px);
+            /* reduz impacto visual */
+            transform: scale(0.8);
+        }
+
+        & div#cards {
+            border-bottom: none;
+        }
+
+        & div#cards2 {
+            margin-top: -15px;
+            border-top: none;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1024px) {
+    section#ultima-secao {
+        padding-top: 50px;
+
+        div#projetos-title h2 {
+            font-size: 4rem;
+        }
+
+        div#cards,
+        & div#cards2 {
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+            padding: 30px;
+            row-gap: 20px;
+            column-gap: 20px;
+            margin-top: 10px;
+
+            & div.card {
+                width: 100%;
+                height: 500px;
+
+                & div.description {
+                    height: auto;
+                }
+            }
+        }
+
+        div.light-point-bg {
+            filter: blur(60px);
+            /* reduz impacto visual */
+            transform: scale(0.8);
+        }
+
+        & div#cards {
+            border-bottom: none;
+        }
+
+        & div#cards2 {
+            margin-top: -15px;
+            border-top: none;
+        }
+    }
+}
