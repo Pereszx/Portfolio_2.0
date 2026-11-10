@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfólio de Kauã Peres Sudre, estudante de Engenharia de Software com foco em dados, IA e automação." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Links -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/banner.css" />
+  <link rel="stylesheet" href="assets/css/terminal.css" />
+  <link rel="stylesheet" href="assets/css/sobre-mim.css" />
+  <link rel="stylesheet" href="assets/css/stack.css" />
+  <link rel="stylesheet" href="assets/css/ultima_secao.css" />
+  <link rel="stylesheet" href="assets/css/contatos.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
+  <title>Kauã Peres Sudre | Portfólio</title>
+</head>
+
+<body>
+
+  <!-- Barra de progresso da rolagem -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navegação -->
+  <header>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <a href="#top" id="logo"><img src="assets/img/logo.png" alt="logo"></a>
+        <div id="links">
+          <li><a href="#sobre-mim">Sobre</a></li>
+          <li><a href="#stack">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </div>
+      </ul>
+
+      <div id="nav-buttons">
+        <a href="https://github.com/Pereszx" target="_blank" rel="noopener">
+          <button id="github">
+            <p>GitHub</p>
+          </button>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Scroll up button -->
+  <button id="to-top">
+    <a href="#top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </button>
+
+  <!-- Banner/hero section -->
+  <section id="banner">
+    <div id="profile-img">
+      <div id="img-bg">
+        <img src="assets/img/perfil-circulo.jpg" alt="Foto de Kauã Peres Sudre">
+      </div>
+    </div>
+    <div id="profile-text">
+      <div id="profile-title">
+        <h1>Estudante de Engenharia de Software</h1>
+        <h2 class="subtitle"><span>Dados, IA e Automação</span> · <span>Front-end e Back-end</span></h2>
+        <p>Desenvolvo soluções com dados, inteligência artificial e automação, e sigo estudando desenvolvimento
+          front-end e back-end para criar aplicações web completas.</p>
+        <a href="#sobre-mim"><button>Explorar</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terminal -->
+  <section id="terminal">
+    <div id="terminal-header">Terminal</div>
+    <div id="terminal-text">
+      <span class="cursor"></span>
+    </div>
+  </section>
+
+  <!-- Sobre mim -->
+  <section id="sobre-mim">
+    <div id="sobre-mim-content">
+
+      <div id="sobre-mim-header">
+        <div id="sobre-mim-title">
+          <h2>Sobre mim</h2>
+        </div>
+        <div id="badges">
+          <div class="badge"><i class="bi bi-wrench"></i> Resolução de problemas</div>
+          <div class="badge"><i class="bi bi-lightning-fill"></i> Aprendizado rápido</div>
+          <div class="badge"><i class="bi bi-people-fill"></i> Trabalho em equipe</div>
+        </div>
+      </div>
+
+      <div id="sobre-mim-info">
+        <ul>
+          <h3> Dados rápidos</h3>
+          <li>Nome: Kauã Peres Sudre</li>
+          <li>Formação: Engenharia de Software, Universidade SENAI PR</li>
+          <li>Período atual: 6º período</li>
+          <li>Conclusão prevista: dezembro de 2027</li>
+          <li>Empresa atual: Electrolux</li>
+          <li>Cargo: Operador A</li>
+          <li>Localização: São José dos Pinhais, PR</li>
+        </ul>
+
+        <div id="text">
+          <h3>O caminho até aqui</h3>
+          <p>
+            Estou no 6º período de Engenharia de Software na Universidade SENAI PR e meu foco é dados, inteligência
+            artificial e automação. Na Electrolux, uso o Power BI no meu trabalho, e no dia a dia uso Claude, ChatGPT
+            e GitHub Copilot. Também continuo estudando desenvolvimento front-end e back-end. Busco um estágio em que eu possa aplicar
+            e aprofundar esses conhecimentos.
+          </p>
+        </div>
+
+        <div id="sobre-mim-tecs">
+          <h3>Tecnologias favoritas</h3>
+          <div id="tec-cards">
+            <div class="small-tec-card">
+              <img class="tech-logo" src="assets/img/icons/python.svg" alt="">
+              <p>Python</p>
+            </div>
+            <div class="small-tec-card">
+              <img class="tech-logo" src="assets/img/icons/sql.svg" alt="">
+              <p>SQL</p>
+            </div>
+            <div class="small-tec-card">
+              <img class="tech-logo" src="assets/img/icons/java.svg" alt="">
+              <p>Java</p>
+            </div>
+            <div class="small-tec-card">
+              <img class="tech-logo" src="assets/img/icons/react.svg" alt="">
+              <p>React</p>
+            </div>
+            <div class="small-tec-card">
+              <img class="tech-logo" src="assets/img/icons/git.svg" alt="">
+              <p>Git</p>
+            </div>
+            <div class="small-tec-card">
+              <img class="tech-logo" src="assets/img/icons/vscode.svg" alt="">
+              <p>VS Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="stack">
+    <div id="stack-title">
+      <h1>Skills</h1>
+      <p>As tecnologias que venho estudando e aplicando em projetos, na faculdade e no trabalho, organizadas por
+        área: dados, IA e automação, front-end e back-end.</p>
+    </div>
+
+    <div class="glow-bg"></div>
+
+    <div id="stack-lists-bg">
+      <h3>Tecnologias</h3>
+      <div id="stack-lists">
+        <div class="stack-list">
+          <h4>Dados</h4>
+          <ul>
+            <li><img class="tech-logo" src="assets/img/icons/sql.svg" alt="">SQL</li>
+            <li><img class="tech-logo" src="assets/img/icons/mysql.svg" alt="">MySQL</li>
+            <li><img class="tech-logo" src="assets/img/icons/postgresql.svg" alt="">PostgreSQL</li>
+            <li><img class="tech-logo" src="assets/img/icons/python.svg" alt="">Python</li>
+            <li><img class="tech-logo" src="assets/img/icons/powerbi.svg" alt="">Power BI</li>
+            <li><img class="tech-logo" src="assets/img/icons/excel.svg" alt="">Excel</li>
+            <li><img class="tech-logo" src="assets/img/icons/google-sheets.svg" alt="">Google Sheets</li>
+          </ul>
+        </div>
+        <div class="stack-list">
+          <h4>IA e Automação</h4>
+          <ul>
+            <li><img class="tech-logo" src="assets/img/icons/n8n.svg" alt="">n8n</li>
+            <li><img class="tech-logo" src="assets/img/icons/api.svg" alt="">APIs REST</li>
+            <li><img class="tech-logo" src="assets/img/icons/prompt.svg" alt="">Prompt engineering</li>
+            <li><img class="tech-logo" src="assets/img/icons/agentes.svg" alt="">Agentes de IA</li>
+            <li><img class="tech-logo" src="assets/img/icons/claude.svg" alt="">Claude</li>
+            <li><img class="tech-logo" src="assets/img/icons/chatgpt.svg" alt="">ChatGPT</li>
+            <li><img class="tech-logo" src="assets/img/icons/copilot.svg" alt="">GitHub Copilot</li>
+          </ul>
+        </div>
+        <div class="stack-list">
+          <h4>Front-end</h4>
+          <ul>
+            <li><img class="tech-logo" src="assets/img/icons/javascript.svg" alt="">JavaScript</li>
+            <li><img class="tech-logo" src="assets/img/icons/typescript.svg" alt="">TypeScript</li>
+            <li><img class="tech-logo" src="assets/img/icons/react.svg" alt="">React</li>
+            <li><img class="tech-logo" src="assets/img/icons/nextjs.svg" alt="">Next.js</li>
+            <li><img class="tech-logo" src="assets/img/icons/figma.svg" alt="">Figma</li>
+          </ul>
+        </div>
+        <div class="stack-list">
+          <h4>Back-end</h4>
+          <ul>
+            <li><img class="tech-logo" src="assets/img/icons/nodejs.svg" alt="">Node.js</li>
+            <li><img class="tech-logo" src="assets/img/icons/java.svg" alt="">Java</li>
+          </ul>
+        </div>
+        <div class="stack-list">
+          <h4>Ferramentas</h4>
+          <ul>
+            <li><img class="tech-logo" src="assets/img/icons/git.svg" alt="">Git</li>
+            <li><img class="tech-logo" src="assets/img/icons/github.svg" alt="">GitHub</li>
+            <li><img class="tech-logo" src="assets/img/icons/bitbucket.svg" alt="">Bitbucket</li>
+            <li><img class="tech-logo" src="assets/img/icons/jira.svg" alt="">Jira</li>
+            <li><img class="tech-logo" src="assets/img/icons/postman.svg" alt="">Postman</li>
+            <li><img class="tech-logo" src="assets/img/icons/vscode.svg" alt="">VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Ultima seção -->
+  <section id="ultima-secao">
+
+    <!-- Background light points -->
+    <div class="light-point-bg" id="bg-1"></div>
+    <div class="light-point-bg" id="bg-2"></div>
+    <div class="light-point-bg" id="bg-3"></div>
+    <div class="light-point-bg" id="bg-4"></div>
+    <div class="light-point-bg" id="bg-5"></div>
+
+    <!-- Projetos -->
+    <div id="projetos">
+      <h2 id="titulo">Projetos</h2>
+    </div>
+
+    <div id="cards">
+
+      <!--
+        ESPAÇO PARA OS 4 NOVOS PROJETOS (IA, automação, dados e Java com React).
+        Para adicionar um projeto: copie o modelo abaixo, tire do comentário e preencha.
+        A imagem vai em assets/img/ e o seletor #id-do-projeto em assets/css/ultima_secao.css
+        (veja o exemplo #volpe no fim da lista de imagens).
+
+      <div class="card">
+        <div class="img" id="id-do-projeto"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Nome do projeto</div>
+          <p class="card-desc">Descrição curta do projeto.</p>
+          <div class="card-stack"><span>Tecnologia 1</span><span>Tecnologia 2</span></div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/REPOSITORIO" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://LINK-DO-PROJETO" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+      -->
+
+      <div class="card">
+        <div class="img" id="instasany"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto mentoria Next.js</div>
+          <div class="card-title">instasany</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/instasany" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://instasany-j159.vercel.app/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="art"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">StreetArt</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Artes-de-rua" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Artes-de-rua/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="clima"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Previsão do Tempo</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Previsao-do-tempo" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Previsao-do-tempo/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volpe Cargo -->
+      <div class="card">
+        <div class="img" id="volpe"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto para cliente</div>
+          <div class="card-title">Volpe Cargo</div>
+          <p class="card-desc">Site institucional de uma empresa de transporte rodoviário de cargas, desenvolvido e
+            vendido para a empresa.</p>
+          <div class="card-stack"><span>Wix</span><span>Hostinger</span></div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://volpecargo.com" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="metabee"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto acadêmico</div>
+          <div class="card-title">Metabee</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Metabee" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Metabee/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="calculadora"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Calculadora</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Calculadora-Web" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Calculadora-Web/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="lista"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Lista de tarefas</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/To-do-list/" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/To-do-list/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img" id="game"></div>
+        <div class="description">
+          <div class="card-mini-text">Projeto pessoal</div>
+          <div class="card-title">Game Mata-Mosquito</div>
+          <div class="button-content">
+            <div class="card-button"><a href="https://github.com/Pereszx/Game-JS" target="_blank" rel="noopener"><button>Github</button></a></div>
+            <div class="card-button"><a href="https://pereszx.github.io/Game-JS/" target="_blank" rel="noopener"><button>Visualizar</button></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contatos -->
+    <section id="contatos">
+      <div class="cta-container">
+        <h2>Gostou do que viu?</h2>
+        <p>Vamos conversar? Mande uma mensagem nas minhas redes sociais.</p>
+
+        <div class="cta-buttons">
+          <a href="https://www.linkedin.com/in/kauaperessudre/" target="_blank" rel="noopener" class="cta-btn">LinkedIn</a>
+          <a href="https://github.com/Pereszx" target="_blank" rel="noopener" class="cta-btn">GitHub</a>
+          <a href="mailto:kauaperessudre13@gmail.com" class="cta-btn">E-mail</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Kauã Peres Sudre. Todos os direitos reservados.</p>
+    </footer>
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/animacoes.js"></script>
+
+</body>
+
+</html>

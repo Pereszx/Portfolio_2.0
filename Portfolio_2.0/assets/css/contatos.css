@@ -1,0 +1,92 @@
+section#contatos {
+    padding: 100px 20px;
+    color: white;
+    overflow: hidden;
+
+    & .cta-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+
+        & h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        & p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        & .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            overflow: hidden;
+
+            & .cta-btn {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 12px 24px;
+                border-radius: 50px;
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-color: rgba(255, 255, 255, 0.3);
+                    background: rgba(255, 255, 255, 0.15);
+                }
+            }
+        }
+    }
+}
+
+
+@media (350px < width < 450px) {
+    section#contatos {
+
+        & .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+
+            & h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            & p {
+                font-size: 0.875rem;
+                color: #ccc;
+                margin-bottom: 40px;
+            }
+
+            & .cta-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+                overflow: hidden;
+
+                & .cta-btn {
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 6px 12px;
+                }
+            }
+        }
+    }
+}

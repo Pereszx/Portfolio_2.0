@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Corta o que passar da largura da tela só na página inteira.
+   "clip" não cria barras de rolagem internas (diferente de "hidden"). */
+html,
+body {
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensa a navbar fixa ao navegar pelas âncoras do menu */
+section,
+#projetos {
+  scroll-margin-top: 80px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--main-bg);
+    color: var(--white);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+:root {
+    --main-bg: #0a0f1c;
+    --white: #fff;
+    --gray-250: #a5a5a5;
+    --purple-bg: #0B0D41;
+
+    --blue-night: #020024;
+    --blue-navy: #0c2d72;
+    --blue-800: #0077b6;
+    --blue-600: #1275c9;
+    --blue-400: #49a5f5;
+    --blue-200: #7cc6ff;
+}
+
+/* Barra de progresso da rolagem */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 20;
+    transform: scaleX(0);
+    transform-origin: left center;
+    background: linear-gradient(90deg, var(--blue-600), var(--blue-200));
+    box-shadow: 0 0 10px rgba(124, 198, 255, 0.7);
+    pointer-events: none;
+}
+
+/* Barra de rolagem personalizada */
+html {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--blue-400) var(--main-bg);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--blue-200), var(--blue-600));
+    border-radius: 10px;
+    border: 2px solid var(--main-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #a8d8ff, var(--blue-400));
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--main-bg);
+}
+
+/* Cor da seleção de texto combinando com o site */
+::selection {
+    background: var(--blue-600);
+    color: var(--white);
+}
